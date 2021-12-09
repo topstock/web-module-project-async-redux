@@ -1,11 +1,11 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from "react";
+import { connect } from "react-redux";
 
 const SelectedQuote = (props)=> {
   return (
     <div>
         <h2>Selected Quote</h2>
-        <div className='selected'>
+        <div className="selected">
           <p>{`${props.selected.quote}`}</p>
           <p>{`${props.selected.author}`}</p>
         </div>

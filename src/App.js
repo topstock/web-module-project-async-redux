@@ -1,19 +1,13 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import NavBar from './components/NavBar';
-import AuthorList from './components/AuthorList';
-import SelectedQuote from './components/SelectedQuote';
+import NavBar from "./components/NavBar";
+import AuthorList from "./components/AuthorList";
+import SelectedQuote from "./components/SelectedQuote";
 
-import {connect} from 'react-redux';
+import {connect} from "react-redux";
 
 function App() {
-
-  // const handleClick = (e) => {
-  //   e.preventDefault();
-  //   setState({
-  //     ...initialState
-  //   });  }
 
   return (
     <div className="App">
@@ -27,4 +21,4 @@ function App() {
   );
 }
 
-export default connect()(App);
+export default App;

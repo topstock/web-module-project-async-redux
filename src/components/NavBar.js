@@ -1,8 +1,11 @@
 import React from "react";
+import { connect } from "react-redux";
+import { fetchStart } from "../actions";
 
-const NavBar = ()=> {
+const NavBar = (props)=> {
   const handleClick = (e) => {
       e.preventDefault();
+      props.fetchStart();
   }
 
   return (
@@ -13,4 +16,4 @@ const NavBar = ()=> {
   )
 }
 
-export default NavBar
+export default connect(null, {fetchStart})(NavBar);
